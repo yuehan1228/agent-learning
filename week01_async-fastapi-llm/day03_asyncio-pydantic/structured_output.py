@@ -65,7 +65,7 @@ def async_advanced():
 class CalendarEvent(BaseModel):
     name: str = Field(description="活动名称，必填")
     date: Date | None = Field(default=None, description="活动日期，格式 YYYY-MM-DD；输入中没有明确日期时必须为 null，不要编造")
-    participants: list[str] = Field(min_length=5, description="至少两个参与者")
+    participants: list[str] = Field(min_length=1, description="至少两个参与者")
     
 def extract_event_with_retry(max_retries: int = 3) -> CalendarEvent:
     input_list = [
@@ -104,4 +104,5 @@ def extract_event_with_retry(max_retries: int = 3) -> CalendarEvent:
 if __name__ == "__main__":
     # async_advanced()
     # extract_event_with_retry()
-    print(CalendarEvent.model_json_schema())
+    event = CalendarEvent(name="date", participants=["john", "yang"])
+    print(event.model_dump())

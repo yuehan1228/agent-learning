@@ -32,8 +32,8 @@
 4. 让模型一次发起多个并行调用并全部处理
 
 ## 今日产出
-- [ ] `tool_demo_1.py`
-- [ ] 时序图（Mermaid 或手绘）
+- [x] `tool_demo_1.py`（并行演示见 `tool_demo_parallel.py`）
+- [x] 时序图（Mermaid 或手绘）（见 [notes.md](notes.md)）
 
 ## 自测
 - 不看资料，能否口述今天的核心流程？

@@ -32,8 +32,8 @@
 4. 在 Swagger 页面完成调用，并加 `/health` 接口
 
 ## 今日产出
-- [ ] 可运行的 `app/main.py`
-- [ ] Swagger 页面调用成功的截图或记录
+- [x] 可运行的 `app/main.py`
+- [x] Swagger 页面调用成功的截图或记录（见 [notes.md](notes.md)）
 
 ## 自测
 - 不看资料，能否口述今天的核心流程？
