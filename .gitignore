@@ -2,3 +2,4 @@
 .vscode/
 .codegraph/
 __pycache__/
+*.pyc

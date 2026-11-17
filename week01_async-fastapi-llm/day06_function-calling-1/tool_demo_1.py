@@ -45,8 +45,6 @@ async def get_responses(i, input_list):
 
     for item in response.output:
         if item.type == "function_call":
-            print(item)
-            exit()
             if item.name == "get_weather":
                 # 3. Execute the function logic for get_weather
                 location = json.loads(item.arguments)["location"]
